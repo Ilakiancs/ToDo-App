@@ -10,9 +10,9 @@ A simple Todo app built with React and styled using Tailwind CSS.
 
 ## Tech Stack
 
-- React 18
+- React 
 - Tailwind CSS
-- JavaScript (ES6+)
+- JavaScript 
 
 ## Setup
 
