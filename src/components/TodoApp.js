@@ -8,7 +8,7 @@ const TodoApp = () => {
   useEffect(() => {
     const fetchTodos = async () => {
       try {
-        const response = await fetch('https://jsonplaceholder.typicode.com/todos?_limit=5');
+        const response = await fetch('https://jsonplaceholder.typicode.com/todos?_limit=0');
         const data = await response.json();
         const transformedData = data.map(todo => ({
           id: todo.id,
@@ -71,7 +71,7 @@ const TodoApp = () => {
         </form>
 
         {isLoading ? (
-          <div className="text-center text-gray-500">Loading todos...</div>
+          <div className="text-center text-gray-500">todos...</div>
         ) : (
           <ul className="space-y-2">
             {todos.map(todo => (
